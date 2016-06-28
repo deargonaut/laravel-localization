@@ -106,7 +106,7 @@ class LaravelLocalization {
 
         $this->configRepository = $this->app[ 'config' ];
         $this->view = $this->app[ 'view' ];
-        $this->translator = $this->app[ 'translator' ];
+        $this->translator = $this->app[ 'translator' ]->routeTranslator();
         $this->router = $this->app[ 'router' ];
         $this->request = $this->app[ 'request' ];
 
